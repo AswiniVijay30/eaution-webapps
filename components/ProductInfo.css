@@ -1,0 +1,50 @@
+.Product{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+table{
+    width: 800px;
+    height: 200px;
+    border:2px solid black;
+    
+    
+}
+th{
+    
+    text-align: center;
+    color: rgb(9, 34, 109);
+    background-color: rgb(252, 250, 251);
+    border: 2px solid black;
+}
+td{
+    
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(252, 250, 251);
+}
+.table2{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+.bid{
+   
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    height: 50%;
+    width: 700px;
+    justify-content: center;
+    margin-left: 400px;
+    background-color: white;
+}

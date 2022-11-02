@@ -1,0 +1,32 @@
+const COMPANY_SERVICE_URL = 'http://localhost:8081/e-auction/api/v1/seller';
+
+export const getProductById = async (productid) => {
+    const url = `/e-auction/api/v1/seller/show-bids/${productid}`;
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        
+            return data;
+    } catch (e) {
+        console.log(e);
+    }
+    return {};
+}
+
+export const getAllBidsOfProduct = async () => {
+    console.log("1st part")
+    const url = "http://localhost:8081/e-auction/api/v1/seller/show-bids";
+    console.log(url);
+    try {
+        console.log("inside try block")
+        const response = await fetch(url);
+        const data = await response.json();
+        if (data.status === 200)
+        console.log(data);
+
+            return data;
+    } catch (e) {
+        console.log(e);
+    }
+    return [];
+}
